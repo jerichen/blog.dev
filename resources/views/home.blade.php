@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    Hello {{ Auth::user()->name }} 
+                    Hello {{ Auth::user()->name }} <br />
+                    
+                    @if (session('from'))
+                        {{ session('from') }}
+                    @endif
                 </div>
             </div>
         </div>

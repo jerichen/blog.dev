@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'IndexController@index');
+Route::get('/article', 'ArticleController@show');
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

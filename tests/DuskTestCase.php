@@ -33,12 +33,4 @@ abstract class DuskTestCase extends BaseTestCase
             'http://selenium-hub:4444/wd/hub', DesiredCapabilities::chrome()
         );
     }
-
-    /*
-    protected function baseUrl()
-    {
-        return 'https://www.google.com';
-    }
-     * 
-     */
 }
