@@ -13,6 +13,8 @@
 
 Route::get('/', 'IndexController@index');
 Route::get('/article', 'ArticleController@show');
+Route::get('/task/create', 'TaskController@create');
+Route::patch('/task/store', 'TaskController@store');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
