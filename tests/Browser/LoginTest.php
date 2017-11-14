@@ -3,38 +3,40 @@ namespace Tests\Browser;
 
 use Tests\DuskTestCase;
 use Laravel\Dusk\Browser;
-use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class LoginTest extends DuskTestCase
 {
-    use DatabaseMigrations;
+//    use DatabaseMigrations;
     
     /**
      * @test
+     * @group login
      */
-    public function index()
+    public function login()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/login')
-                    ->assertSee('Login');
+                    ->assertTitle('Blog.dev')
+                    ->assertSee('我是登入頁')
+                    ->assertPathIs('/login');
         });
     }    
 
     /**
      * @test
+     * @group login
      */
-    public function login()
+    public function loginPostSuccess()
     {
-        $user = factory(User::class)->create([
-            'email' => 'taylor@laravel.com',
-        ]);
-
-        $this->browse(function (Browser $browser) use ($user) {
+        $this->browse(function (Browser $browser) {
             $browser->visit('/login')
-                    ->type('email', $user->email)
-                    ->type('password', 'secret')
+                    ->type('email', 'jerichen@cw.com.tw')
+                    ->type('password', 'password')
                     ->press('Login')
+                    ->assertSee('登入成功')
+                    ->assertSee('Hello')
+                    ->assertSee('Jeri')
                     ->assertPathIs('/home');
         });
     }
