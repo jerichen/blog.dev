@@ -1,6 +1,6 @@
 # blog.dev
 
-## Laravel Dusk Example
+## Laravel Dusk Example 搭配 [Docker-lnmp-dev](/docker-lnmp-dev)
 
 ##### 使用者情節 1
 [1]: 首頁 - 正確的標題、內文、的頁面<br/>
