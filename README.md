@@ -42,6 +42,15 @@
 [4]: 代出來源 Seesion<br />
 
 ##### Testing 執行動作
+[1]: <https://blog.dev/article><br />
+>>[a]: Title 文章頁<br />
+>>[b]: Body 我是文章頁<br />
+>>[c]: Page Is 'article'<br /><br />
+[2]: 註冊<br />
+>>[a]: 輸入姓名、Email、Password、Password_Confirmation<br />
+>>[b]: 點擊註冊<br />
+>>[c]: 重導向登入成功頁<br />
+>>[d]: Session 我從文章頁來<br />
 
 ##### 使用者情節 3
 [1]: 任務新增頁 - 正確的標題、內文、的頁面<br />
