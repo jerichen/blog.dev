@@ -10,7 +10,7 @@ class ArticleController extends Controller
 {
     public function show(Request $request)
     {
-        Cookie::queue('test', 'Hello');
+        Cookie::queue('test', 'Hello', 10);
         
         $cookies = $request->cookie();
         $cookie = $request->cookie('test');
@@ -29,7 +29,7 @@ class ArticleController extends Controller
             'age' => '18'
         ];
         
-        Cookie::queue('user_ary', $array);
+        Cookie::queue('user_ary', $array, 10);
         
         return;
     }
