@@ -39,6 +39,7 @@ class ArticleTest extends DuskTestCase
                     ->assertSee('Hello')
                     ->assertSee('Jeri')
                     ->assertSee('我來自文章頁')
+                    ->assertCookieValue('test', 'Hello')	
                     ->assertPathIs('/home');
         });
     }
