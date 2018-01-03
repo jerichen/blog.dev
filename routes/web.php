@@ -18,3 +18,7 @@ Route::patch('/task/store', 'TaskController@store');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Vue
+Route::get('/demo', 'DemoController@index');
