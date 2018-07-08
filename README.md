@@ -10,12 +10,12 @@
 [5]: 登入成功後導向成功頁 - 正確的標題、內文、的頁面<br/>
 
 ##### Testing 執行動作
-[1]: <https://blog.dev><br />
+[1]: <https://local-blog.com><br />
 >>[a]: Title 首頁<br />
 >>[b]: Body 我是首頁<br />
 >>[c]: Page Is '/'<br /><br />
     
-[2]: <https://blog.dev/register><br />
+[2]: <https://local-blog.com/register><br />
 >>[a]: Title Blog.dev<br />
 >>[b]: Body 我是註冊頁<br />
 >>[c]: Page Is 'register'<br /><br />
@@ -25,7 +25,7 @@
 >>[b]: 點擊註冊<br />
 >>[c]: 重導向登入成功頁<br /><br />
 
-[4]: <https://blog.dev/login><br />
+[4]: <https://local-blog.com/login><br />
 >>[a]: Title Blog.dev<br />
 >>[b]: Body 我是登入頁<br />
 >>[c]: Page Is 'login' <br /><br />
@@ -42,7 +42,7 @@
 [4]: 代出來源 Seesion<br />
 
 ##### Testing 執行動作
-[1]: <https://blog.dev/article><br />
+[1]: <https://local-blog.com/article><br />
 >>[a]: Title 文章頁<br />
 >>[b]: Body 我是文章頁<br />
 >>[c]: Page Is 'article'<br /><br />
@@ -58,7 +58,7 @@
 [3]: 重導向任務頁<br />
 
 ##### Testing 執行動作
-[1]: <https://blog.dev/task/create><br />
+[1]: <https://local-blog.com/task/create><br />
 >>[a]: Title 任務新增頁<br />
 >>[b]: Body 我是任務新增頁<br />
 >>[c]: Page Is 'task/create'<br /><br />
@@ -73,7 +73,7 @@
 [1]: Email 重複註冊<br />
 
 ##### Testing 執行動作
-[1]: <https://blog.dev/register><br />
+[1]: <https://local-blog.com/register><br />
 >>[a]: 輸入姓名、Email、Password、Password_Confirmation<br />
 >>[b]: 點擊註冊<br />
 >>[c]: FAILURES !!<br />
